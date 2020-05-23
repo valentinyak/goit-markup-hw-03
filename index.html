@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студия</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     />
     <link
       rel="stylesheet"
@@ -16,28 +16,34 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header>
+    <header class="border-bottom">
       <div class="container header-links">
         <nav class="header-links">
           <a href="./index.html" class="logo primery"
             ><span class="logo-web">Web</span> Studio</a
           >
           <ul class="site-nav">
-            <li><a href="./index.html" class="current">Студия</a></li>
-            <li><a href="./portfolio.html">Портфолио</a></li>
-            <li><a href="">Контакты</a></li>
+            <li class="site-nav-link">
+              <a href="./index.html" class="current">Студия</a>
+            </li>
+            <li class="site-nav-link">
+              <a href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="site-nav-link"><a href="">Контакты</a></li>
           </ul>
         </nav>
         <address class="main-addr">
-          <ul class="main-addr-link">
+          <ul class="main-addr-list">
             <li>
               <a href="mailto:info@devstudio.com">
-                <img src="./img/email.svg" alt="" /> info@devstudio.com</a
+                <img src="./img/email.svg" alt="" class="inline-block" />
+                info@devstudio.com</a
               >
             </li>
             <li>
               <a href="tel:+380961111111">
-                <img src="./img/phone.svg" alt="" /> +38 096 111 11 11</a
+                <img src="./img/phone.svg" alt="" class="inline-block" /> +38
+                096 111 11 11</a
               >
             </li>
           </ul>
@@ -50,20 +56,24 @@
       <!-- Герой -->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
-          <a href="" class="hero-link">Заказать услугу</a>
+          <div class="hero-container">
+            <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
+            <a href="" class="hero-link">Заказать услугу</a>
+          </div>
         </div>
       </section>
 
       <!-- Преимущества -->
       <section class="features">
         <div class="container">
-          <h2 class="features-title">Преимущества</h2>
+          <h2 class="visuallyhidden">Преимущества</h2>
           <ul class="features-list">
             <li>
-              <a href="" class="features-link"
-                ><img src="./img/vector1.svg" alt="Картинка преимущество 1"
-              /></a>
+              <img
+                src="./img/vector1.svg"
+                alt="Картинка преимущество 1"
+                class="features-blok"
+              />
               <h3 class="features-title-h3">Внимание к деталям</h3>
               <p class="features-paragraph">
                 Идейные соображения, а также начало повседневной работы по
@@ -71,9 +81,11 @@
               </p>
             </li>
             <li>
-              <a href="" class="features-link"
-                ><img src="./img/vector2.svg" alt="Картинка преимущество 2"
-              /></a>
+              <img
+                src="./img/vector2.svg"
+                alt="Картинка преимущество 2"
+                class="features-blok"
+              />
               <h3 class="features-title-h3">Пунктуальность</h3>
               <p class="features-paragraph">
                 Задача организации, в особенности же рамки и место обучения
@@ -81,9 +93,11 @@
               </p>
             </li>
             <li>
-              <a href="" class="features-link"
-                ><img src="./img/vector3.svg" alt="Картинка преимущество 3"
-              /></a>
+              <img
+                src="./img/vector3.svg"
+                alt="Картинка преимущество 3"
+                class="features-blok"
+              />
               <h3 class="features-title-h3">Планирование</h3>
               <p class="features-paragraph">
                 Равным образом консультация с широким активом в значительной
@@ -91,9 +105,11 @@
               </p>
             </li>
             <li>
-              <a href="" class="features-link"
-                ><img src="./img/vector4.svg" alt="Картинка преимущество 4"
-              /></a>
+              <img
+                src="./img/vector4.svg"
+                alt="Картинка преимущество 4"
+                class="features-blok"
+              />
               <h3 class="features-title-h3">Современные технологии</h3>
               <p class="features-paragraph">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -114,7 +130,7 @@
                 ><img
                   src="./img/img1.jpg"
                   alt="Картинка десктопных приложений"
-                  width="380"
+                  width="370"
                   height="294"
                 />
                 <span>Десктопные приложения</span>
@@ -125,7 +141,7 @@
                 ><img
                   src="./img/img2.jpg"
                   alt="Картинка мобильных приложений"
-                  width="380"
+                  width="370"
                   height="294"
                 />
                 <span>Мобильные приложения</span>
@@ -136,7 +152,7 @@
                 ><img
                   src="./img/img3.jpg"
                   alt="Картинка дизайнерских решений"
-                  width="380"
+                  width="370"
                   height="294"
                 />
                 <span>Дизайнерские решения</span>
@@ -156,7 +172,7 @@
                 class="our-team-foto"
                 src="./img/john-smith.jpg"
                 alt="John Smith foto"
-                width="278"
+                width="270"
                 height="260"
               />
               <p class="our-team-name">John Smith</p>
@@ -194,7 +210,7 @@
                 class="our-team-foto"
                 src="./img/marta-stewart.jpg"
                 alt="Marta Stewart foto"
-                width="278"
+                width="270"
                 height="260"
               />
               <p class="our-team-name">Marta Stewart</p>
@@ -232,7 +248,7 @@
                 class="our-team-foto"
                 src="./img/robert-jakis.jpg"
                 alt="Robert Jakis foto"
-                width="278"
+                width="270"
                 height="260"
               />
               <p class="our-team-name">Robert Jakis</p>
@@ -270,7 +286,7 @@
                 class="our-team-foto"
                 src="./img/martin-doe.jpg"
                 alt="Martin Doe foto"
-                width="278"
+                width="270"
                 height="260"
               />
               <p class="our-team-name">Martin Doe</p>
@@ -312,66 +328,41 @@
         <div class="container">
           <h2 class="clients-title">Постоянные клиенты</h2>
           <ul class="clients-list">
-            <div class="block">
-              <li>
-                <a href=""
-                  ><img
-                    src="./img/logo1.svg"
-                    alt="Логотип компании 1"
-                    class="clients-logo"
-                /></a>
-              </li>
-            </div>
-            <div class="block">
-              <li>
-                <a href=""
-                  ><img
-                    src="./img/logo2.svg"
-                    alt="Логотип компании 2"
-                    class="clients-logo"
-                /></a>
-              </li>
-            </div>
-            <div class="block">
-              <li>
-                <a href=""
-                  ><img
-                    src="./img/logo3.svg"
-                    alt="Логотип компании 3"
-                    class="clients-logo"
-                /></a>
-              </li>
-            </div>
-            <div class="block">
-              <li>
-                <a href=""
-                  ><img
-                    src="./img/logo4.svg"
-                    alt="Логотип компании 4"
-                    class="clients-logo"
-                /></a>
-              </li>
-            </div>
-            <div class="block">
-              <li>
-                <a href=""
-                  ><img
-                    src="./img/logo5.svg"
-                    alt="Логотип компании 5"
-                    class="clients-logo"
-                /></a>
-              </li>
-            </div>
-            <div class="block">
-              <li>
-                <a href=""
-                  ><img
-                    src="./img/logo6.svg"
-                    alt="Логотип компании 6"
-                    class="clients-logo"
-                /></a>
-              </li>
-            </div>
+            <li>
+              <a href=""
+                ><img src="./img/logo1.svg" alt="Логотип компании 1"
+              /></a>
+            </li>
+
+            <li>
+              <a href=""
+                ><img src="./img/logo2.svg" alt="Логотип компании 2"
+              /></a>
+            </li>
+
+            <li>
+              <a href=""
+                ><img src="./img/logo3.svg" alt="Логотип компании 3"
+              /></a>
+            </li>
+
+            <li>
+              <a href=""
+                ><img src="./img/logo4.svg" alt="Логотип компании 4"
+              /></a>
+            </li>
+
+            <li>
+              <a href=""
+                ><img src="./img/logo5.svg" alt="Логотип компании 5"
+              /></a>
+            </li>
+
+            <li>
+              <a href=""
+                ><img src="./img/logo6.svg" alt="Логотип компании 6"
+              /></a>
+            </li>
           </ul>
         </div>
       </section>
@@ -386,10 +377,18 @@
               ><span class="logo-web">Web</span> Studio</a
             >
             <address>
-              <span class="addr-map">г. Киев, пр-т Леси Украинки, 26 </span>
-              <br />
-              <span class="addr-email"> info@example.com </span> <br />
-              <span class="addr-phone">+38 099 111 11 11</span>
+              <a
+                href="https://goo.gl/maps/tPkDzDL7LACH9RPQ9"
+                target="_blank"
+                class="addr-map"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+              <a href="mailto:info@example.com" class="addr-email"
+                >info@example.com</a
+              >
+              <a href="tel:+380991111111" class="addr-phone"
+                >+38 099 111 11 11</a
+              >
             </address>
           </div>
           <div>
@@ -422,8 +421,11 @@
           <div>
             <h3 class="follow">Подпишитесь на рассылку</h3>
             <div class="follow-container">
-              <p class="enter-e-mail">E-mail</p>
-              <button type="button" class="follow-button">Подписаться</button>
+              <input type="text" placeholder="E-mail" class="enter-e-mail" />
+              <button type="button" class="follow-button">
+                <span class="follow-button-text">Подписаться</span>
+                <img src="./img/sending.svg" alt="" />
+              </button>
             </div>
           </div>
         </div>
